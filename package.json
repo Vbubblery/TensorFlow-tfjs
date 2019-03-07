@@ -1,0 +1,15 @@
+{
+  "name": "TensorFlow-tfjs",
+  "version": "1.0.0",
+  "description": "None",
+  "main": "index.js",
+  "scripts":{
+    "start":"node index.js"
+  },
+  "repository": "https://github.com/Vbubblery/TensorFlow-tfjs.git",
+  "author": "Vbubblery <zhoujuncheng0116@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@tensorflow/tfjs-node": "^0.3.1"
+  }
+}

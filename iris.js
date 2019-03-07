@@ -9,6 +9,10 @@ const df = dataForge
 
 const df_X = df.subset(["sepal.length","sepal.width","petal.length"]).toRows();
 const df_y = df.subset(["variety"]).toRows();
-const train_X = tf.tensor(df_X);
+const train_X = tf.tensor2d(df_X);
 const train_y = tf.tensor(df_y);
 train_X.print()
+
+// 调用dispose来清空已占用的 GPU 内存：
+train_X.dispose();
+train_y.dispose();

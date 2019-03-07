@@ -12,6 +12,7 @@
   "dependencies": {
     "@tensorflow/tfjs-node": "^0.3.1",
     "data-forge": "^1.4.7",
-    "data-forge-fs": "^0.0.3"
+    "data-forge-fs": "^0.0.3",
+    "numjs": "^0.16.0"
   }
 }

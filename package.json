@@ -3,13 +3,15 @@
   "version": "1.0.0",
   "description": "None",
   "main": "index.js",
-  "scripts":{
-    "start":"node index.js"
+  "scripts": {
+    "start": "node index.js"
   },
   "repository": "https://github.com/Vbubblery/TensorFlow-tfjs.git",
   "author": "Vbubblery <zhoujuncheng0116@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@tensorflow/tfjs-node": "^0.3.1"
+    "@tensorflow/tfjs-node": "^0.3.1",
+    "data-forge": "^1.4.7",
+    "data-forge-fs": "^0.0.3"
   }
 }

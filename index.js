@@ -1,6 +1,7 @@
 // Optional Load the binding:
 // Use '@tensorflow/tfjs-node-gpu' if running with GPU.
 const tf = require('@tensorflow/tfjs-node');
+
 const input = tf.input({shape:[10]})
 
 const layer1 = tf.layers.dense({units: 100, activation: 'relu'});
@@ -21,3 +22,4 @@ model.fit(xs, ys, {
     onEpochEnd: (epoch, log) => console.log(`Epoch ${epoch}: loss = ${log.loss}`)
   }
 });
+// xs.print()

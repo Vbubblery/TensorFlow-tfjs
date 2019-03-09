@@ -25,25 +25,22 @@ const df_y = df.subset(["variety"]).select(row=>{
       value = -1;
   }
   return {variety:value}
-}).toRows();
-
-console.log(df_y);
+}).getSeries("variety").toArray();
 
 const train_X = tf.tensor2d(df_X);
-const train_y = tf.tensor(df_y);
+const train_y = tf.tensor1d(df_y,dtype='int32').oneHot(train_y, 3);
 
-const input = tf.input({shape:[4]})
-const layer1 = tf.layers.dense({units: 20, activation: 'relu'});
-const layer2 = tf.layers.dense({units: 40, activation: 'relu'});
-const layer3 = tf.layers.dense({units: 40, activation: 'relu'});
-const layer4 = tf.layers.dense({units: 20, activation: 'relu'});
-const layer5 = tf.layers.dense({units: 10, activation: 'relu'});
-const layer6 = tf.layers.dense({units: 3, activation: 'softmax'});
+// train_y.print()
 
-const x = tf.tensor1d([1, 2, 3, 4,5,6]);
-
-// tf.oneHot(train_y, 4).print();
-
-// 调用dispose来清空已占用的 GPU 内存：
-train_X.dispose();
-train_y.dispose();
+//
+// const input = tf.input({shape:[4]})
+// const layer1 = tf.layers.dense({units: 20, activation: 'relu'});
+// const layer2 = tf.layers.dense({units: 40, activation: 'relu'});
+// const layer3 = tf.layers.dense({units: 40, activation: 'relu'});
+// const layer4 = tf.layers.dense({units: 20, activation: 'relu'});
+// const layer5 = tf.layers.dense({units: 10, activation: 'relu'});
+// const layer6 = tf.layers.dense({units: 3, activation: 'softmax'});
+//
+// // 调用dispose来清空已占用的 GPU 内存：
+// train_X.dispose();
+// train_y.dispose();

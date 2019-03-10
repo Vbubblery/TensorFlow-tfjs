@@ -217,6 +217,11 @@ balanced-match@^1.0.0:
   resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-1.0.0.tgz#89b4d199ab2bee49de164ea02b89ce462d71b767"
   integrity sha1-ibTRmasr7kneFk6gK4nORi1xt2c=
 
+bambi@^1.6.2:
+  version "1.6.2"
+  resolved "https://registry.yarnpkg.com/bambi/-/bambi-1.6.2.tgz#0101dfc64768d58985714b6f1fd4e2654deae77a"
+  integrity sha512-rOoZEdi3q/Q4PdQagekw49JT0qtaRIu9ojmTGz+pv1pblELVeLn3FKFQ8ijdDs48z0dBwoA0pyGsPpxxX0xuvQ==
+
 bindings@~1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/bindings/-/bindings-1.2.1.tgz#14ad6113812d2d37d72e67b4cacb4bb726505f11"
